@@ -50,18 +50,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editTextLinkEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="O seu link aparecerá aqui"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -69,7 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLinkEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLinkEmailId"
         app:srcCompat="@drawable/icon_whatsapp" />
 
     <TextView
@@ -107,18 +95,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumero" />
 
-    <EditText
-        android:id="@+id/editTextlinkWhatapp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="O seu link aparecerá aqui"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMensagem" />
-
     <Button
         android:id="@+id/buttonOk"
         android:layout_width="wrap_content"
@@ -128,5 +104,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLinkEmailId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="O seu link aparecerá aqui"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textViewLinkZapId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="O seu link aparecerá aqui"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMensagem"
+        app:layout_constraintStart_toStartOf="@+id/editTextMensagem"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMensagem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
